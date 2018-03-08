@@ -15,5 +15,6 @@ super start 자 이제 시작이야~
 soRNadms~
 
 이거슨 보드
+그거슨 기트 낄낄
 </body>
 </html>
