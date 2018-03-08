@@ -10,7 +10,7 @@
 
 	<!-- Scan Scope -->
 	<mvc:annotation-driven />
-	<context:component-scan base-package="mvc_controllers" />
+	<context:component-scan base-package="mvc_controller" />
 	<context:component-scan base-package="models" />
 
 
@@ -18,13 +18,7 @@
 
 	
 
-	<bean class="org.springframework.web.servlet.view.tiles3.TilesViewResolver">
-		<property name="order" value="7" />
-		<!-- LOC 에러의 경우 -->
-	</bean>
-	<bean class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
-		<property name="definitions" value="/WEB-INF/tiles/*-tiles.xml" />
-	</bean>
+	
 
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
@@ -33,8 +27,6 @@
 		<property name="order" value="9" />
 	</bean>
 
-	<bean id="multipartResolver"
-		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
-	</bean>
+	
 
 </beans>
