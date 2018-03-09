@@ -25,6 +25,19 @@
     </plugins>
   </build>
   <dependencies>
+  <!-- https://mvnrepository.com/artifact/javax.mail/mail -->
+<dependency>
+    <groupId>javax.mail</groupId>
+    <artifactId>mail</artifactId>
+    <version>1.4.7</version>
+</dependency>
+  <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-mail -->
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-mail</artifactId>
+    <version>1.5.9.RELEASE</version>
+</dependency>
+  
   <dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>

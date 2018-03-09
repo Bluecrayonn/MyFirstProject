@@ -11,7 +11,7 @@
 	<!-- Scan Scope -->
 	<mvc:annotation-driven />
 	<context:component-scan base-package="mvc_controller" />
-	<context:component-scan base-package="models" />
+	<context:component-scan base-package="mvc_service" />
 
 
 
@@ -25,6 +25,20 @@
 		<property name="prefix" value="/WEB-INF/" />
 		<property name="suffix" value=".jsp" />
 		<property name="order" value="9" />
+	</bean>
+	
+	<bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+	<property name="host" value="smtp.gmail.com"/>
+	<property name="username" value="pupcrayon@gmail.com"/>
+	<property name="password" value="skantdlv1"/>
+ 	<property name="port" value="587"/>
+ 	<property name="javaMailProperties">
+ 	<props>
+ 	<prop key="mail.smtp.starttls.enable">true</prop>
+ 	<prop key="mail.smtp.auth">true</prop>
+ 	
+ 	</props>
+ 	</property>
 	</bean>
 
 	
